@@ -1,0 +1,130 @@
+@media (min-width: 1024px) {
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 20%, rgba(19, 19, 20, 1) 20%, rgba(19, 19, 20, 1) 100%) no-repeat;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 65px;
+      height: 65px;
+      background: url("/img/play-icon.svg") no-repeat;
+      position: absolute;
+      top: 55%;
+    }
+
+  }
+
+  .video h2 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+  }
+
+  .video p {
+    font-family: $font;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba($color: #fff, $alpha: 0.7);
+    width: 340px;
+  }
+
+}
+
+@media (max-width: 1023px) {
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 20%, rgba(19, 19, 20, 1) 20%, rgba(19, 19, 20, 1) 100%) no-repeat;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 90px;
+      background: url("/img/play-icon.svg") no-repeat;
+      position: absolute;
+      top: 63%;
+      left: 46%;
+    }
+
+  }
+
+  .video h2 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+  }
+
+  .video p {
+    font-family: $font;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba($color: #fff, $alpha: 0.7);
+    width: 429px;
+    text-align: center;
+  }
+
+  .video img {
+    width: 503px;
+    height: 282px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 20%, rgba(19, 19, 20, 1) 20%, rgba(19, 19, 20, 1) 100%) no-repeat;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 90px;
+      height: 90px;
+      background: url("/img/play-icon.svg") no-repeat;
+      position: absolute;
+      top: 63%;
+      left: 46%;
+    }
+
+  }
+
+  .video h2 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+  }
+
+  .video p {
+    font-family: $font;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba($color: #fff, $alpha: 0.7);
+    width: 288px;
+    text-align: center;
+  }
+
+  .video img {
+    width: 288px;
+    height: 162px;
+  }
+
+}
