@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 150px 157px;
+    padding: 148px 157px 150px 157px;
   }
 
   .types h2 {
@@ -14,13 +14,14 @@
     font-weight: 600;
     color: #1f1f1f;
     margin: 0;
-    margin-bottom: 50px;
+    margin-top: 2px;
     width: 100%;
     text-align: center;
+    letter-spacing: -0.95px;
   }
 
   .types__mount {
-    margin-top: 40px;
+    margin-top: 90px;
     position: relative;
 
     &::before {
@@ -28,11 +29,11 @@
       display: block;
       width: 47px;
       height: 47px;
-      border: 8px solid #0AD9C6;
+      border: 8px solid #0ad9c6;
       box-sizing: border-box;
       position: absolute;
-      left: -25px;
-      top: -25px;
+      left: -19px;
+      top: -18px;
     }
 
     &::after {
@@ -40,11 +41,11 @@
       display: block;
       width: 47px;
       height: 47px;
-      border: 8px solid #0AD9C6;
+      border: 8px solid #0ad9c6;
       box-sizing: border-box;
       position: absolute;
-      right: -25px;
-      bottom: 25px;
+      right: -23px;
+      bottom: 31px;
     }
   }
 
@@ -60,48 +61,80 @@
       font-size: 22px;
       line-height: 34px;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 15px;
+      letter-spacing: -1px;
     }
   }
 
   .types__road {
     z-index: 1;
     position: relative;
+    margin-top: 61px;
 
     &::before {
       content: "";
       display: block;
       width: 180px;
       height: 180px;
-      border: 18px solid #0AD9C6;
+      border: 27px solid #0ad9c6;
       box-sizing: border-box;
       border-radius: 50%;
       position: absolute;
-      left: -80px;
-      top: 120px;
+      left: -60px;
+      top: 157px;
       z-index: -1;
     }
   }
 
   .types__kids {
     position: relative;
+    margin-top: 51px;
+
+    img {
+      height: 513px;
+    }
 
     &::before {
       content: "";
       display: block;
       width: 95px;
       height: 95px;
-      border: 18px solid #0AD9C6;
+      border: 18px solid #0ad9c6;
       box-sizing: border-box;
       border-radius: 50%;
       position: absolute;
-      right: -40px;
-      top: -30px;
+      right: -35px;
+      top: -31px;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1360px) {
+    .types {
+      padding: 148px 100px 150px 100px;
+    }
+
+    .types__mount {
+      margin-top: 61px;
+      margin-right: 15px;
+      margin-left: 15px;
+
+      img {
+        height: 503px;
+      }
+    }
+
+    .types__kids {
+      margin: 0 auto;
+      margin-top: 61px;
+
+      img {
+        height: 503px;
+      }
     }
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .types {
     background-color: #f6f7f9;
     display: flex;
@@ -117,9 +150,10 @@
     font-weight: 600;
     color: #1f1f1f;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: 100%;
     text-align: center;
+    letter-spacing: -0.5px;
   }
 
   .types__mount {
@@ -146,7 +180,8 @@
       font-size: 22px;
       line-height: 34px;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 18px;
+      letter-spacing: -1px;
     }
   }
 
@@ -167,12 +202,12 @@
       display: block;
       width: 127px;
       height: 127px;
-      border: 18px solid #0AD9C6;
+      border: 18px solid #0ad9c6;
       box-sizing: border-box;
       border-radius: 50%;
       position: absolute;
-      left: -50px;
-      bottom: 30px;
+      left: -37px;
+      bottom: 26px;
       z-index: -1;
     }
   }
@@ -180,7 +215,7 @@
   .types__kids {
     position: relative;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 48px;
 
     img {
       width: 270px;
@@ -193,14 +228,20 @@
     &::before {
       content: "";
       display: block;
-      width: 95px;
-      height: 95px;
-      border: 13px solid #0AD9C6;
+      width: 68px;
+      height: 68px;
+      border: 13px solid #0ad9c6;
       box-sizing: border-box;
       border-radius: 50%;
       position: absolute;
-      right: -40px;
-      top: -30px;
+      right: -25px;
+      top: -20px;
+    }
+  }
+
+  @media (min-width: 988px) and (max-width: 1023px) {
+    .types__kids {
+      margin: 0;
     }
   }
 }
@@ -211,7 +252,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 50px 25px;
+    padding: 50px 25px 54px 25px;
   }
 
   .types h2 {
@@ -221,22 +262,9 @@
     font-weight: 600;
     color: #1f1f1f;
     margin: 0;
-    margin-bottom: 50px;
     width: 100%;
     text-align: center;
-  }
-
-  .types__mount {
-    position: relative;
-    margin-top: 40px;
-
-    img {
-      width: 270px;
-      height: 300px;
-      object-fit: cover;
-      object-position: 10% 42%;
-      border-radius: 10px;
-    }
+    letter-spacing: -0.75px;
   }
 
   .types__road,
@@ -244,6 +272,7 @@
   .types__kids {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 
     span {
       font-family: $font;
@@ -251,13 +280,15 @@
       font-size: 22px;
       line-height: 34px;
       text-align: center;
-      margin-top: 20px;
+      margin-top: 16px;
+      letter-spacing: -1.05px;
     }
   }
 
   .types__road {
     z-index: 1;
     position: relative;
+    margin-top: 30px;
 
     img {
       width: 270px;
@@ -272,21 +303,33 @@
       display: block;
       width: 127px;
       height: 127px;
-      border: 18px solid #0AD9C6;
+      border: 18px solid #0ad9c6;
       box-sizing: border-box;
       border-radius: 50%;
 
       position: absolute;
-      left: -50px;
-      bottom: 30px;
+      left: -25px;
+      bottom: 26px;
       z-index: -1;
+    }
+  }
+
+  .types__mount {
+    position: relative;
+    margin-top: 42px;
+
+    img {
+      width: 270px;
+      height: 300px;
+      object-fit: cover;
+      object-position: 10% 42%;
+      border-radius: 10px;
     }
   }
 
   .types__kids {
     position: relative;
-    margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 42px;
 
     img {
       width: 270px;
@@ -299,14 +342,29 @@
     &::before {
       content: "";
       display: block;
-      width: 95px;
-      height: 95px;
-      border: 13px solid #0AD9C6;
+      width: 68px;
+      height: 68px;
+      border: 13px solid #0ad9c6;
       box-sizing: border-box;
       border-radius: 50%;
       position: absolute;
-      right: -40px;
-      top: -30px;
+      right: -14px;
+      top: -20px;
+    }
+  }
+
+  @media (min-width: 590px) and (max-width: 767px) {
+    .types__mount {
+      position: relative;
+      margin-top: 30px;
+
+      img {
+        width: 270px;
+        height: 300px;
+        object-fit: cover;
+        object-position: 10% 42%;
+        border-radius: 10px;
+      }
     }
   }
 }

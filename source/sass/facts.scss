@@ -1,6 +1,7 @@
 @media (min-width: 1024px) {
   .facts {
     margin-top: 390px;
+    margin-bottom: 152px;
   }
 
   .facts h2 {
@@ -10,11 +11,16 @@
     line-height: 30px;
     color: #1f1f1f;
     text-align: center;
+    letter-spacing: -0.8px;
+    margin: 0;
   }
 
   .facts__list {
     display: flex;
+    justify-content: space-between;
     counter-reset: myCounter;
+    margin: 50px 145px 0 143px;
+    padding: 0;
   }
 
   .facts__list li {
@@ -25,24 +31,41 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    letter-spacing: -0.5px;
+    width: 250px;
 
-    &:before {
+    &::before {
       counter-increment: myCounter;
       content: "0"counter(myCounter);
       color: $turquoise;
-      display: inline-block;
+      display: block;
+      width: 30px;
       text-align: center;
       font-family: $font;
       font-weight: bold;
       font-size: 28px;
       line-height: 38px;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    .facts__list {
+      margin: 50px 45px 0 43px;
     }
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .facts {
     margin-top: 70px;
+    margin-left: 106px;
+    margin-right: 106px;
+    margin-bottom: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .facts h2 {
@@ -52,6 +75,8 @@
     line-height: 41px;
     color: #1f1f1f;
     text-align: center;
+    letter-spacing: -0.5px;
+    margin: 0;
   }
 
   .facts__list {
@@ -62,8 +87,8 @@
     justify-content: center;
     counter-reset: myCounter;
     margin: 0;
-    margin-left: 106px;
-    margin-right: 106px;
+
+    margin-top: 30px;
     padding: 0;
   }
 
@@ -76,8 +101,9 @@
     display: flex;
     flex-direction: column;
     width: 263px;
+    letter-spacing: -0.5px;
 
-    &:before {
+    &::before {
       counter-increment: myCounter;
       content: "0"counter(myCounter);
       color: $turquoise;
@@ -87,13 +113,15 @@
       font-weight: bold;
       font-size: 28px;
       line-height: 38px;
+      margin-bottom: 15px;
     }
   }
 }
 
 @media (max-width: 767px) {
   .facts {
-    margin-top: 70px;
+    margin-top: 72px;
+    margin-bottom: 35px;
   }
 
   .facts h2 {
@@ -103,7 +131,8 @@
     line-height: 41px;
     color: #1f1f1f;
     text-align: center;
-    letter-spacing: -0.005em;
+    letter-spacing: -0.69px;
+    margin: 0;
   }
 
   .facts__list {
@@ -112,6 +141,7 @@
     justify-content: center;
     counter-reset: myCounter;
     margin: 0;
+    margin-top: 30px;
     padding: 0;
   }
 
@@ -124,8 +154,11 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-bottom: 36px;
+    letter-spacing: -0.5px;
+    width: 288px;
 
-    &:before {
+    &::before {
       counter-increment: myCounter;
       content: "0"counter(myCounter);
       color: $turquoise;
@@ -135,6 +168,7 @@
       font-weight: bold;
       font-size: 28px;
       line-height: 38px;
+      margin-bottom: 18px;
     }
   }
 }

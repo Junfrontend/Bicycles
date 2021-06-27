@@ -5,25 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Проект для отработки навыков в Акселераторе от HTMLAcademy. Автор: Белобородов Данил. https://github.com/Junfrontend">
   <title>Велосипеды проект для акселератора в HTMLAcademy</title>
+  <link rel="preload" href="fonts/open-sans-300.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/open-sans-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/open-sans-bold.woff2" as="font" crossorigin>
   <link type="text/css" rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <header class="header container">
     <img class="header__logo" src="img/logo.svg" alt="Логотип" width="68" height="20">
-    <button class="header__toggle header__toggle--no-js"></button>
+    <button class="header__toggle header__toggle--no-js"></button> <!-- header__toggle--no-js реализация при не работающем js. header__toggle--opened - открытое меню, меняет картинку-->
     <nav>
-      <ul class="header__nav">
-        <li>О нас</li>
-        <li>Виды велосипедов</li>
-        <li>Видео про велосипеды</li>
-        <li>Контакты</li>
+      <ul id="starts" class="header__nav header__nav--no-js"> <!-- header__nav--no-js реализация при не работающем js. header__nav--menu-closed  - закрытое меню -->
+        <li><a href="#facts">О нас</a></li>
+        <li><a href="#types">Виды велосипедов</a></li>
+        <li><a href="#video">Видео про велосипеды</a></li>
+        <li><a href="#footer">Контакты</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="main-block">
+    <section class="main-block main-block--no-js"> <!-- main-block--no-js реализация при не работающем js-->
       <div class="main-block__intro intro">
         <img class="intro__logo" src="img/logo.svg" alt="Логотип" width="68" height="20">
         <h1>Мы продаем велосипеды</h1>
@@ -32,15 +36,15 @@
       <form class="main-block__form form">
         <h2>Заполните поля ниже и мы подберем велосипед Вашей мечты</h2>
         <label class="form__name">
-          <input type="text" placeholder="Введите Ваше Имя">
+          <input id="name" type="text" placeholder="Введите Ваше Имя" required pattern="[А-Я][а-я' -]+">
         </label>
         <label class="form__phone">
-          <input type="phone" placeholder="Введите Ваш номер телефона">
+          <input id="phone" type="tel" placeholder="Введите Ваш номер телефона"  required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
         </label>
         <button class="form__button">Подобрать велосипед мечты</button>
       </form>
     </section>
-    <section class="facts">
+    <section id="facts" class="facts">
       <h2>Несколько фактов о нас</h2>
       <ol class="facts__list">
         <li>Самый широкий выбор велосипедов!</li>
@@ -49,38 +53,54 @@
         <li>Профессиональные консультации!</li>
       </ol>
     </section>
-    <section class="types">
+    <section  id="types" class="types">
       <h2>Виды велосипедов</h2>
       <div class="types__road">
-        <img src="/img/road-bike-desktop@1x.png" srcset="/img/road-bike-desktop@1x.png, /img/road-bike-desktop@2x.png 2x" alt="Фото дорожного велосипеда" width="342" height="503">
+        <picture>
+          <source srcset="/img/road-bike-desktop@1x.webp, /img/road-bike-desktop@2x.webp 2x">
+          <!-- 1х: 342px; 2x: 684px -->
+          <img src="/img/road-bike-desktop@1x.png" srcset="/img/road-bike-desktop@1x.png, /img/road-bike-desktop@2x.png 2x" alt="Фото дорожного велосипеда" width="342" height="503">
+        </picture>
         <span>Дорожный велосипед</span>
       </div>
       <div class="types__mount">
-        <img  src="/img/mount-bike-desktop@1x.png" srcset="/img/mount-bike-desktop@1x.png, /img/mount-bike-desktop@2x.png 2x" alt="Фото горного велосипеда" width="342" height="566">
+        <picture>
+          <source srcset="/img/mount-bike-desktop@1x.webp, /img/mount-bike-desktop@2x.webp 2x">
+          <!-- 1х: 342px; 2x: 684px -->
+          <img  src="/img/mount-bike-desktop@1x.png" srcset="/img/mount-bike-desktop@1x.png, /img/mount-bike-desktop@2x.png 2x" alt="Фото горного велосипеда" width="342" height="566">
+        </picture>
         <span>Горный велосипед</span>
       </div>
       <div class="types__kids">
-        <img  src="/img/kids-bike-desktop@1x.png" srcset="/img/kids-bike-desktop@1x.png, /img/kids-bike-desktop@2x.png 2x" alt="Фото детского велосипеда" width="342" height="503">
+        <picture>
+          <source srcset="/img/kids-bike-desktop@1x.webp, /img/kids-bike-desktop@2x.webp 2x">
+          <!-- 1х: 342px; 2x: 684px -->
+          <img  src="/img/kids-bike-desktop@1x.png" srcset="/img/kids-bike-desktop@1x.png, /img/kids-bike-desktop@2x.png 2x" alt="Фото детского велосипеда" width="342" height="503">
+        </picture>
         <span>Детский велосипед</span>
       </div>
     </section>
-    <section class="video">
+    <section id="video" class="video">
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-      <img src="/img/video-plug-desktop@1x.png" srcset="/img/video-plug-desktop@1x.png, /img/video-plug-desktop@2x.png 2x" alt="Видео про велосипеды, заглушка" width="929" height="522">
+      <picture>
+        <source srcset="/img/video-plug-desktop@1x.webp, /img/video-plug-desktop@2x.webp 2x">
+        <img src="/img/video-plug-desktop@1x.png" srcset="/img/video-plug-desktop@1x.png, /img/video-plug-desktop@2x.png 2x" alt="Видео про велосипеды, заглушка" width="929" height="522">
+      </picture>
+      <button class="video__play-button"></button>
     </section>
   </main>
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <h2>Как нас найти?</h2>
     <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
     <div class="footer__map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1624537349252!5m2!1sru!2sru"
-        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        width="320" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="footer__contacts contacts">
       <a class="contacts__email" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
-      <a class="contacts__phone" href="tel:+7 (499) -784-684-46">+7 (499) -784-684-46</a>
+      <a class="contacts__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
     </div>
   </footer>
   <script src="js/script.js"></script>

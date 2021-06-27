@@ -4,3 +4,14 @@
   }
 }
 
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container {
+    margin: 0 auto;
+  }
+}

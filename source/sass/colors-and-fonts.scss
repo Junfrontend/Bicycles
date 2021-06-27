@@ -1,8 +1,6 @@
 $turquoise: #0ad9c6;
 $dark: #1f1f1f;
-$font: "Open Sans",
-"Arial",
-sans-serif;
+$font: "Open Sans", "Arial", sans-serif;
 
 body {
   margin: 0;
@@ -30,10 +28,10 @@ body {
 
 /* open-sans-300 */
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   src:
-    url('../fonts/open-sans-300.woff2') format('woff2'),
-    url('../fonts/open-sans-300.woff') format('woff');
+    url("../fonts/open-sans-300.woff2") format("woff2"),
+    url("../fonts/open-sans-300.woff") format("woff");
 }

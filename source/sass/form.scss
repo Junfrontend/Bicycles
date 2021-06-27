@@ -8,18 +8,21 @@
 
   .form h2 {
     font-family: $font;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 17px;
     line-height: 28px;
     text-align: center;
-    color: white;
+    color: #ffffff;
     margin: 0;
+    margin-top: 9px;
+    width: 328px;
+    letter-spacing: 0.3px;
   }
 
   .form__name input,
   .form__phone input {
     width: 327px;
-    height: 50px;
+    height: 49px;
     box-sizing: border-box;
     border: 1px solid #c9ccd4;
     border-radius: 6px;
@@ -27,7 +30,16 @@
     font-size: 15px;
     line-height: 24px;
     color: rgba($color: #1c1c1c, $alpha: 0.5);
-    margin-top: 20px;
+    margin-top: 18px;
+    padding: 0;
+    padding-left: 28px;
+    padding-top: 2px;
+
+    &:hover,
+    &:focus {
+      background-color: #c9ccd4;
+      cursor: pointer;
+    }
   }
 
   .form__button {
@@ -42,16 +54,42 @@
     line-height: 21px;
     text-align: center;
     border: none;
+    letter-spacing: -0.3px;
+
+    &:hover,
+    &:focus {
+      background: url("/img/icon-bicycle.png") no-repeat;
+      background-size: 30px 30px;
+      background-position: left center;
+      color: $turquoise;
+      background-color: $turquoise;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-name: slidein;
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1250px) {
+    .form {
+      margin-right: 8%;
+    }
   }
 }
 
-@media (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .form {
     display: flex;
     flex-direction: column;
-    width: 327px;
+    width: 340px;
     margin: 0 auto;
     margin-top: 150px;
+  }
+
+  @media (min-width: 850px) and (max-width: 1023px) {
+    .form {
+      margin-top: 200px;
+    }
   }
 
   .form h2 {
@@ -60,14 +98,15 @@
     font-size: 18px;
     line-height: 28px;
     text-align: center;
-    color: black;
+    color: #000000;
     margin: 0;
+    letter-spacing: -0.5px;
   }
 
   .form__name input,
   .form__phone input {
     width: 321px;
-    height: 50px;
+    height: 49px;
     box-sizing: border-box;
     border: 1px solid #c9ccd4;
     border-radius: 6px;
@@ -75,6 +114,15 @@
     font-size: 15px;
     line-height: 24px;
     color: rgba($color: #1c1c1c, $alpha: 0.5);
+    display: block;
+    margin: 0 auto;
+    padding-left: 20px;
+
+    &:hover,
+    &:focus {
+      background-color: #c9ccd4;
+      cursor: pointer;
+    }
   }
 
   .form__name input {
@@ -83,10 +131,10 @@
 
   .form__phone input {
     margin-top: 20px;
+    height: 48px;
   }
 
   .form__button {
-    margin-top: 20px;
     background: $turquoise;
     border-radius: 6px;
     width: 321px;
@@ -97,6 +145,23 @@
     line-height: 21px;
     text-align: center;
     border: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    letter-spacing: -0.3px;
+
+    &:hover,
+    &:focus {
+      background: url("/img/icon-bicycle.png") no-repeat;
+      background-size: 30px 30px;
+      background-position: left center;
+      color: $turquoise;
+      background-color: $turquoise;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-name: slidein;
+      cursor: pointer;
+    }
   }
 }
 
@@ -106,7 +171,7 @@
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 140px;
   }
 
   .form h2 {
@@ -115,16 +180,17 @@
     font-size: 18px;
     line-height: 28px;
     text-align: center;
-    color: black;
+    color: #000000;
     display: block;
     margin: 0 auto;
     width: 288px;
+    letter-spacing: -0.03em;
   }
 
   .form__name input,
   .form__phone input {
     width: 288px;
-    height: 50px;
+    height: 49px;
     box-sizing: border-box;
     border: 1px solid #c9ccd4;
     border-radius: 6px;
@@ -134,14 +200,23 @@
     display: block;
     margin: 0 auto;
     color: rgba($color: #1c1c1c, $alpha: 0.5);
+
+    &:hover,
+    &:focus {
+      background-color: #c9ccd4;
+      cursor: pointer;
+    }
   }
 
   .form__name input {
-    margin-top: 30px;
+    margin-top: 20px;
+    padding-left: 25px;
   }
 
   .form__phone input {
     margin-top: 20px;
+    padding-left: 25px;
+    height: 48px;
   }
 
   .form__button {
@@ -156,6 +231,31 @@
     text-align: center;
     border: none;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 18px;
+    padding: 0;
+    letter-spacing: -0.39px;
+
+    &:hover,
+    &:focus {
+      background: url("/img/icon-bicycle.png") no-repeat;
+      background-size: 30px 30px;
+      background-position: left center;
+      color: $turquoise;
+      background-color: $turquoise;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-name: slidein;
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes slidein {
+  from {
+    background-position: -10% center;
+  }
+
+  to {
+    background-position: +110% center;
   }
 }
