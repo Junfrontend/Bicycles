@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 12.5%, rgba(19, 19, 20, 1) 12.5%, rgba(19, 19, 20, 1) 100%) no-repeat;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 12.6%, rgba(19, 19, 20, 1) 12.6%, rgba(19, 19, 20, 1) 100%) no-repeat;
     position: relative;
   }
 
@@ -40,9 +40,9 @@
     border: none;
     width: 65px;
     height: 65px;
-    background: url("/img/play-icon.svg") no-repeat;
+    background: url("/build/img/play-icon.svg") no-repeat;
     position: absolute;
-    top: 63.5%;
+    top: 63.3%;
 
     &:hover,
     &:focus {
@@ -96,7 +96,7 @@
     border: none;
     width: 90px;
     height: 90px;
-    background: url("/img/play-icon.svg") no-repeat;
+    background: url("/build/img/play-icon.svg") no-repeat;
     background-size: cover;
     position: absolute;
     top: 61.7%;
@@ -154,7 +154,7 @@
     border: none;
     width: 65px;
     height: 65px;
-    background: url("/img/play-icon.svg") no-repeat;
+    background: url("/build/img/play-icon.svg") no-repeat;
     position: absolute;
     top: 73.5%;
     left: calc((100% - 65px) / 2);

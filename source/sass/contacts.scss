@@ -26,28 +26,22 @@
   }
 
   .contacts__email {
-    margin-bottom: 2px;
+    position: relative;
+    bottom: 2px;
 
-    &::before {
-      content: "";
-      display: block;
-      width: 26px;
-      height: 20px;
-      background: url("/img/mail-icon.svg") no-repeat;
-      margin-right: 15px;
+    svg {
+      position: absolute;
+      right: 15px;
     }
   }
 
   .contacts__phone {
-    margin-right: 17px;
+    position: relative;
+    right: 17px;
 
-    &::before {
-      content: "";
-      display: block;
-      width: 20px;
-      height: 24px;
-      background: url("/img/phone-icon.svg") no-repeat;
-      margin-right: 17px;
+    svg {
+      position: absolute;
+      right: 17px;
     }
   }
 }
@@ -86,12 +80,7 @@
     left: 40px;
     top: 0;
 
-    &::before {
-      content: "";
-      display: block;
-      width: 26px;
-      height: 20px;
-      background: url("/img/mail-icon.svg") no-repeat;
+    svg {
       position: absolute;
       left: -40px;
       top: 2px;
@@ -102,12 +91,7 @@
     margin-top: 4px;
     position: relative;
 
-    &::before {
-      content: "";
-      display: block;
-      width: 20px;
-      height: 24px;
-      background: url("/img/phone-icon.svg") no-repeat;
+    svg {
       position: absolute;
       left: -39px;
       top: -6px;
@@ -149,12 +133,7 @@
     top: 0;
     position: relative;
 
-    &::before {
-      content: "";
-      display: block;
-      width: 26px;
-      height: 20px;
-      background: url("/img/mail-icon.svg") no-repeat;
+    svg {
       position: absolute;
       left: -41px;
       top: -1px;
@@ -168,15 +147,10 @@
     left: 12px;
     top: 1px;
 
-    &::before {
-      content: "";
-      display: block;
-      width: 20px;
-      height: 24px;
-      background: url("/img/phone-icon.svg") no-repeat;
+    svg {
       position: absolute;
-      top: -5.5px;
-      left: -36px;
+      top: -4.5px;
+      left: -37px;
     }
   }
 }

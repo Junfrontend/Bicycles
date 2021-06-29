@@ -19,8 +19,7 @@
     letter-spacing: 0.3px;
   }
 
-  .form__name input,
-  .form__phone input {
+  label input {
     width: 327px;
     height: 49px;
     box-sizing: border-box;
@@ -101,12 +100,16 @@
     color: #000000;
     margin: 0;
     letter-spacing: -0.5px;
+    margin-bottom: 30px;
   }
 
-  .form__name input,
-  .form__phone input {
+  label {
+    margin-bottom: 20px;
+  }
+
+  label input {
     width: 321px;
-    height: 49px;
+    height: 48.5px;
     box-sizing: border-box;
     border: 1px solid #c9ccd4;
     border-radius: 6px;
@@ -125,15 +128,6 @@
     }
   }
 
-  .form__name input {
-    margin-top: 30px;
-  }
-
-  .form__phone input {
-    margin-top: 20px;
-    height: 48px;
-  }
-
   .form__button {
     background: $turquoise;
     border-radius: 6px;
@@ -147,7 +141,6 @@
     border: none;
     display: block;
     margin: 0 auto;
-    margin-top: 20px;
     letter-spacing: -0.3px;
 
     &:hover,
@@ -187,10 +180,10 @@
     letter-spacing: -0.03em;
   }
 
-  .form__name input,
-  .form__phone input {
+
+  label input {
     width: 288px;
-    height: 49px;
+    height: 48.5px;
     box-sizing: border-box;
     border: 1px solid #c9ccd4;
     border-radius: 6px;
@@ -199,6 +192,8 @@
     line-height: 24px;
     display: block;
     margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 25px;
     color: rgba($color: #1c1c1c, $alpha: 0.5);
 
     &:hover,
@@ -208,21 +203,10 @@
     }
   }
 
-  .form__name input {
-    margin-top: 20px;
-    padding-left: 25px;
-  }
-
-  .form__phone input {
-    margin-top: 20px;
-    padding-left: 25px;
-    height: 48px;
-  }
-
   .form__button {
     background: $turquoise;
     border-radius: 6px;
-    width: 288px;
+    width: 287px;
     height: 50px;
     font-family: $font;
     font-weight: 600;

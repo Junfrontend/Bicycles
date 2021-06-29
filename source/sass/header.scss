@@ -67,7 +67,7 @@
   .header__toggle {
     width: 50px;
     height: 50px;
-    background-image: url("/img/burger.svg");
+    background-image: url("/build/img/burger.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: $turquoise;
@@ -87,7 +87,7 @@
   .header__toggle--opened {
     width: 50px;
     height: 50px;
-    background-image: url("/img/close.svg");
+    background-image: url("/build/img/close.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #ffffff;
@@ -135,7 +135,7 @@
         display: block;
         width: 12px;
         height: 12px;
-        background-image: url("/img/right-arrow.svg");
+        background-image: url("/build/img/right-arrow.svg");
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -174,7 +174,7 @@
   .header__toggle {
     width: 50px;
     height: 50px;
-    background-image: url("/img/burger.svg");
+    background-image: url("/build/img/burger.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: $turquoise;
@@ -196,7 +196,7 @@
   .header__toggle--opened {
     width: 50px;
     height: 50px;
-    background-image: url("/img/close.svg");
+    background-image: url("/build/img/close.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #ffffff;
