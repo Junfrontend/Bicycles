@@ -1,9 +1,15 @@
 @media (min-width: 1024px) {
   .types {
     background-color: #f6f7f9;
+  }
+
+  .types__wrapper {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 1440px;
+    box-sizing: border-box;
     padding: 148px 157px 150px 157px;
   }
 
@@ -109,7 +115,7 @@
   }
 
   @media (min-width: 1024px) and (max-width: 1360px) {
-    .types {
+    .types__wrapper {
       padding: 148px 100px 150px 100px;
     }
 
@@ -137,6 +143,9 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .types {
     background-color: #f6f7f9;
+  }
+
+  .types__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -249,6 +258,9 @@
 @media (max-width: 767px) {
   .types {
     background-color: #f6f7f9;
+  }
+
+  .types__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

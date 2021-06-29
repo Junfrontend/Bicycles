@@ -4,6 +4,7 @@ var nav = document.querySelector('.header__nav');
 var mainBlock = document.querySelector('.main-block--no-js');
 var nameInput = document.getElementById('name');
 var phoneInput = document.getElementById('phone');
+var sendButton = document.querySelector('.form__button');
 
 if (nav) {
   nav.classList.add('header__nav--menu-closed');
@@ -51,5 +52,10 @@ if (nameInput && phoneInput) {
     } else {
       phoneInput.setCustomValidity('');
     }
+  });
+
+  sendButton.addEventListener('click', function () {
+    localStorage.setItem(nameInput.name, nameInput.value);
+    localStorage.setItem(phoneInput.name, phoneInput.value);
   });
 }

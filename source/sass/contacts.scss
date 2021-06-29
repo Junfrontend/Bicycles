@@ -27,21 +27,25 @@
 
   .contacts__email {
     position: relative;
-    bottom: 2px;
+    left: 42px;
+    top: 3px;
 
     svg {
       position: absolute;
-      right: 15px;
+      left: -41px;
+      top: -1px;
     }
   }
 
   .contacts__phone {
     position: relative;
     right: 17px;
+    top: 3px;
 
     svg {
       position: absolute;
-      right: 17px;
+      left: -37px;
+      top: -3px;
     }
   }
 }

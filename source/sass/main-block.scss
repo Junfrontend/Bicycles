@@ -4,6 +4,7 @@
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 17.6%;
+    max-width: 1440px;
 
     &::before {
       content: "";
@@ -48,7 +49,12 @@
 
   @media (min-width: 1500px) {
     .main-block {
-      margin-top: 10%;
+      margin: 0 auto;
+      margin-top: 260px;
+
+      &::before {
+        max-width: 1500px;
+      }
     }
   }
 }
@@ -73,6 +79,12 @@
     }
   }
 
+  .main-block--no-js {
+    &::before {
+      top: 220px;
+    }
+  }
+
   @media (min-resolution: 2dppx) {
     .main-block {
       &::before {
@@ -86,6 +98,12 @@
         background-size: contain;
         background-repeat: no-repeat;
         z-index: -1;
+      }
+    }
+
+    .main-block--no-js {
+      &::before {
+        top: 230px;
       }
     }
   }

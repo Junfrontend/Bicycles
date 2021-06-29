@@ -37,11 +37,11 @@
       <path d="M3.45641 6.62432C3.37185 5.42623 3.63759 4.24606 4.3412 3.29684C4.9512 2.43632 5.74541 1.96636 6.70269 1.69172C7.50898 1.4525 8.03745 1.74561 8.26998 2.64204C8.60217 3.98224 9.07628 5.3225 9.24841 6.73361C9.30277 7.35485 8.90114 8.23322 8.46629 8.6856C7.37614 9.75888 7.60263 10.5399 8.43006 12.1643C8.68675 12.6881 9.09442 13.5934 9.88864 14.7919C10.7161 15.9992 11.1539 16.6472 12.2169 16.0975C13.3977 15.5035 14.2583 15.8855 15.1492 16.8444C15.7531 17.5369 16.4175 18.1318 17.0215 18.8243C17.8942 19.8542 17.8549 20.5641 17.1725 21.2915C15.9434 22.6309 13.9141 23.0736 12.4042 22.1766C11.5707 21.6881 10.7402 21.0487 10.0789 20.303C7.16477 16.9825 5.06297 13.1212 3.79765 8.76321C3.59532 8.02654 3.50171 7.28104 3.45641 6.62432Z" stroke="#0AD9C6" fill="#ffffff" stroke-width="2" stroke-miterlimit="10"></path>
     </symbol>
   </svg>
-  <header class="header container">
+  <header class="header">
     <svg class="header__logo" width="68" height="20">
       <use xlink:href="#logo"></use>
     </svg>
-    <button type="button" class="header__toggle header__toggle--no-js"></button>
+    <button type="button" name="header__toggle" aria-label="Кнопка открытия меню" class="header__toggle header__toggle--no-js"></button>
     <!-- header__toggle--no-js реализация при не работающем js. header__toggle--opened - открытое меню, меняет картинку-->
     <nav>
       <ul id="starts" class="header__nav header__nav--no-js">
@@ -63,18 +63,18 @@
         <h1>Мы продаем велосипеды</h1>
         <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </div>
-      <form class="main-block__form form">
+      <form class="main-block__form form" action="https://echo.htmlacademy.ru/" method="POST">
         <h2>Заполните поля ниже и мы подберем велосипед Вашей мечты</h2>
         <label>
-          <input id="name" type="text" placeholder="Введите Ваше Имя" required="" pattern="[А-Я][а-я' -]+">
+          <input id="name" name="name" type="text" placeholder="Введите Ваше Имя" required="" pattern="[A-Za-zА-Яа-я' -]+">
         </label>
         <label>
-          <input id="phone" type="tel" placeholder="Введите Ваш номер телефона" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+          <input id="phone" name="phone" type="tel" placeholder="Введите Ваш номер телефона" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
         </label>
         <button type="submit" class="form__button">Подобрать велосипед мечты</button>
       </form>
     </section>
-    <section id="facts" class="facts">
+    <section id="facts" class="facts container">
       <h2>Несколько фактов о нас</h2>
       <ol class="facts__list">
         <li>Самый широкий выбор велосипедов!</li>
@@ -84,30 +84,32 @@
       </ol>
     </section>
     <section id="types" class="types">
-      <h2>Виды велосипедов</h2>
-      <div class="types__road">
-        <picture>
-          <source srcset="/build/img/road-bike-desktop@1x.webp, /build/img/road-bike-desktop@2x.webp 2x" type="image/webp">
-          <!-- 1х: 342px; 2x: 684px -->
-          <img src="/build/img/road-bike-desktop@1x.png" srcset="/build/img/road-bike-desktop@1x.png, /build/img/road-bike-desktop@2x.png 2x" alt="Фото дорожного велосипеда" width="342" height="503">
-        </picture>
-        <span>Дорожный велосипед</span>
-      </div>
-      <div class="types__mount">
-        <picture>
-          <source srcset="/build/img/mount-bike-desktop@1x.webp, /build/img/mount-bike-desktop@2x.webp 2x" type="image/webp">
-          <!-- 1х: 342px; 2x: 684px -->
-          <img src="/build/img/mount-bike-desktop@1x.png" srcset="/build/img/mount-bike-desktop@1x.png, /build/img/mount-bike-desktop@2x.png 2x" alt="Фото горного велосипеда" width="342" height="566">
-        </picture>
-        <span>Горный велосипед</span>
-      </div>
-      <div class="types__kids">
-        <picture>
-          <source srcset="/build/img/kids-bike-desktop@1x.webp, /build/img/kids-bike-desktop@2x.webp 2x" type="image/webp">
-          <!-- 1х: 342px; 2x: 684px -->
-          <img src="/build/img/kids-bike-desktop@1x.png" srcset="/build/img/kids-bike-desktop@1x.png, /build/img/kids-bike-desktop@2x.png 2x" alt="Фото детского велосипеда" width="342" height="503">
-        </picture>
-        <span>Детский велосипед</span>
+      <div class="types__wrapper">
+        <h2>Виды велосипедов</h2>
+        <div class="types__road">
+          <picture>
+            <source srcset="/build/img/road-bike-desktop@1x.webp, /build/img/road-bike-desktop@2x.webp 2x" type="image/webp">
+            <!-- 1х: 342px; 2x: 684px -->
+            <img src="/build/img/road-bike-desktop@1x.png" srcset="/build/img/road-bike-desktop@1x.png, /build/img/road-bike-desktop@2x.png 2x" alt="Фото дорожного велосипеда" width="342" height="503">
+          </picture>
+          <span>Дорожный велосипед</span>
+        </div>
+        <div class="types__mount">
+          <picture>
+            <source srcset="/build/img/mount-bike-desktop@1x.webp, /build/img/mount-bike-desktop@2x.webp 2x" type="image/webp">
+            <!-- 1х: 342px; 2x: 684px -->
+            <img src="/build/img/mount-bike-desktop@1x.png" srcset="/build/img/mount-bike-desktop@1x.png, /build/img/mount-bike-desktop@2x.png 2x" alt="Фото горного велосипеда" width="342" height="566">
+          </picture>
+          <span>Горный велосипед</span>
+        </div>
+        <div class="types__kids">
+          <picture>
+            <source srcset="/build/img/kids-bike-desktop@1x.webp, /build/img/kids-bike-desktop@2x.webp 2x" type="image/webp">
+            <!-- 1х: 342px; 2x: 684px -->
+            <img src="/build/img/kids-bike-desktop@1x.png" srcset="/build/img/kids-bike-desktop@1x.png, /build/img/kids-bike-desktop@2x.png 2x" alt="Фото детского велосипеда" width="342" height="503">
+          </picture>
+          <span>Детский велосипед</span>
+        </div>
       </div>
     </section>
     <section id="video" class="video">
@@ -117,7 +119,7 @@
         <source srcset="/build/img/video-plug-desktop@1x.webp, /build/img/video-plug-desktop@2x.webp 2x" type="image/webp">
         <img src="/build/img/video-plug-desktop@1x.png" srcset="/build/img/video-plug-desktop@1x.png, /build/img/video-plug-desktop@2x.png 2x" alt="Видео про велосипеды, заглушка" width="929" height="522">
       </picture>
-      <button type="button" class="video__play-button"></button>
+      <button type="button" aria-label="Кнопка запуска видео" class="video__play-button"></button>
     </section>
   </main>
   <footer id="footer" class="footer">
