@@ -13,7 +13,7 @@
   <link type="text/css" rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body tabindex="-1">
   <svg class="sprite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
       <clipPath id="clip0">
@@ -46,10 +46,10 @@
     <nav>
       <ul id="starts" class="header__nav header__nav--no-js">
         <!-- header__nav--no-js реализация при не работающем js. header__nav--menu-closed  - закрытое меню -->
-        <li><a href="#facts">О нас</a></li>
-        <li><a href="#types">Виды велосипедов</a></li>
-        <li><a href="#video">Видео про велосипеды</a></li>
-        <li><a href="#footer">Контакты</a></li>
+        <li><a tabindex="1" href="#facts">О нас</a></li>
+        <li><a tabindex="2" href="#types">Виды велосипедов</a></li>
+        <li><a tabindex="3" href="#video">Видео про велосипеды</a></li>
+        <li><a tabindex="4" href="#footer">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -66,12 +66,12 @@
       <form class="main-block__form form" action="https://echo.htmlacademy.ru/" method="POST">
         <h2>Заполните поля ниже и мы подберем велосипед Вашей мечты</h2>
         <label>
-          <input id="name" name="name" type="text" placeholder="Введите Ваше Имя" required="" pattern="[A-Za-zА-Яа-я' -]+">
+          <input id="name" tabindex="5" name="name" type="text" placeholder="Введите Ваше Имя" required="" pattern="[A-Za-zА-Яа-я' -]+">
         </label>
         <label>
-          <input id="phone" name="phone" type="tel" placeholder="Введите Ваш номер телефона" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+          <input id="phone" tabindex="6" name="phone" type="tel" placeholder="Введите Ваш номер телефона" required="" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
         </label>
-        <button type="submit" class="form__button">Подобрать велосипед мечты</button>
+        <button type="submit" tabindex="7" class="form__button">Подобрать велосипед мечты</button>
       </form>
     </section>
     <section id="facts" class="facts container">
@@ -88,25 +88,25 @@
         <h2>Виды велосипедов</h2>
         <div class="types__road">
           <picture>
-            <source srcset="/build/img/road-bike-desktop@1x.webp, /build/img/road-bike-desktop@2x.webp 2x" type="image/webp">
+            <source srcset="/img/road-bike-desktop@1x.webp, /img/road-bike-desktop@2x.webp 2x" type="image/webp">
             <!-- 1х: 342px; 2x: 684px -->
-            <img src="/build/img/road-bike-desktop@1x.png" srcset="/build/img/road-bike-desktop@1x.png, /build/img/road-bike-desktop@2x.png 2x" alt="Фото дорожного велосипеда" width="342" height="503">
+            <img src="/img/road-bike-desktop@1x.png" srcset="/img/road-bike-desktop@1x.png, /img/road-bike-desktop@2x.png 2x" alt="Фото дорожного велосипеда" width="342" height="503">
           </picture>
           <span>Дорожный велосипед</span>
         </div>
         <div class="types__mount">
           <picture>
-            <source srcset="/build/img/mount-bike-desktop@1x.webp, /build/img/mount-bike-desktop@2x.webp 2x" type="image/webp">
+            <source srcset="/img/mount-bike-desktop@1x.webp, /img/mount-bike-desktop@2x.webp 2x" type="image/webp">
             <!-- 1х: 342px; 2x: 684px -->
-            <img src="/build/img/mount-bike-desktop@1x.png" srcset="/build/img/mount-bike-desktop@1x.png, /build/img/mount-bike-desktop@2x.png 2x" alt="Фото горного велосипеда" width="342" height="566">
+            <img src="/img/mount-bike-desktop@1x.png" srcset="/img/mount-bike-desktop@1x.png, /img/mount-bike-desktop@2x.png 2x" alt="Фото горного велосипеда" width="342" height="566">
           </picture>
           <span>Горный велосипед</span>
         </div>
         <div class="types__kids">
           <picture>
-            <source srcset="/build/img/kids-bike-desktop@1x.webp, /build/img/kids-bike-desktop@2x.webp 2x" type="image/webp">
+            <source srcset="/img/kids-bike-desktop@1x.webp, /img/kids-bike-desktop@2x.webp 2x" type="image/webp">
             <!-- 1х: 342px; 2x: 684px -->
-            <img src="/build/img/kids-bike-desktop@1x.png" srcset="/build/img/kids-bike-desktop@1x.png, /build/img/kids-bike-desktop@2x.png 2x" alt="Фото детского велосипеда" width="342" height="503">
+            <img src="/img/kids-bike-desktop@1x.png" srcset="/img/kids-bike-desktop@1x.png, /img/kids-bike-desktop@2x.png 2x" alt="Фото детского велосипеда" width="342" height="503">
           </picture>
           <span>Детский велосипед</span>
         </div>
@@ -116,26 +116,26 @@
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
       <picture>
-        <source srcset="/build/img/video-plug-desktop@1x.webp, /build/img/video-plug-desktop@2x.webp 2x" type="image/webp">
-        <img src="/build/img/video-plug-desktop@1x.png" srcset="/build/img/video-plug-desktop@1x.png, /build/img/video-plug-desktop@2x.png 2x" alt="Видео про велосипеды, заглушка" width="929" height="522">
+        <source srcset="/img/video-plug-desktop@1x.webp, /img/video-plug-desktop@2x.webp 2x" type="image/webp">
+        <img src="/img/video-plug-desktop@1x.png" srcset="/img/video-plug-desktop@1x.png, /img/video-plug-desktop@2x.png 2x" alt="Видео про велосипеды, заглушка" width="929" height="522">
       </picture>
-      <button type="button" aria-label="Кнопка запуска видео" class="video__play-button"></button>
+      <button type="button" tabindex="8" aria-label="Кнопка запуска видео" class="video__play-button"></button>
     </section>
   </main>
   <footer id="footer" class="footer">
     <h2>Как нас найти?</h2>
     <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
     <div class="footer__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1624537349252!5m2!1sru!2sru" width="320" height="250" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003151!2d30.320858716211177!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1624537349252!5m2!1sru!2sru" width="320" height="250" tabindex="9" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="footer__contacts contacts">
-      <a class="contacts__email" href="mailto:puteshestviemechta@gmail.ru">
+      <a class="contacts__email" tabindex="10" href="mailto:puteshestviemechta@gmail.ru">
         <svg width="26" height="20">
           <use xlink:href="#mail-icon"></use>
         </svg>
         puteshestviemechta@gmail.ru
       </a>
-      <a class="contacts__phone" href="tel:+749978468446">
+      <a class="contacts__phone" tabindex="11" href="tel:+749978468446">
         <svg width="22" height="21">
           <use xlink:href="#phone-icon"></use>
         </svg>

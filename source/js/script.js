@@ -5,6 +5,7 @@ var mainBlock = document.querySelector('.main-block--no-js');
 var nameInput = document.getElementById('name');
 var phoneInput = document.getElementById('phone');
 var sendButton = document.querySelector('.form__button');
+var body = document.querySelector('body');
 
 if (nav) {
   nav.classList.add('header__nav--menu-closed');
@@ -17,6 +18,7 @@ if (toggle && nav) {
   toggle.addEventListener('click', function () {
     nav.classList.toggle('header__nav--menu-closed');
     toggle.classList.toggle('header__toggle--opened');
+    body.classList.toggle('overflow-hidden');
   });
 }
 

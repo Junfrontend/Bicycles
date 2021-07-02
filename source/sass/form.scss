@@ -28,7 +28,7 @@
     font-family: $font;
     font-size: 15px;
     line-height: 24px;
-    color: rgba($color: #1c1c1c, $alpha: 0.5);
+    color: #1c1c1c;
     margin-top: 18px;
     padding: 0;
     padding-left: 28px;
@@ -57,10 +57,9 @@
 
     &:hover,
     &:focus {
-      background: url("/build/img/icon-bicycle.png") no-repeat;
+      background: url("/img/icon-bicycle.png") no-repeat;
       background-size: 30px 30px;
       background-position: left center;
-      color: $turquoise;
       background-color: $turquoise;
       animation-duration: 2s;
       animation-iteration-count: infinite;
@@ -116,7 +115,7 @@
     font-family: $font;
     font-size: 15px;
     line-height: 24px;
-    color: rgba($color: #1c1c1c, $alpha: 0.5);
+    color: #1c1c1c;
     display: block;
     margin: 0 auto;
     padding-left: 20px;
@@ -145,10 +144,9 @@
 
     &:hover,
     &:focus {
-      background: url("/build/img/icon-bicycle.png") no-repeat;
+      background: url("/img/icon-bicycle.png") no-repeat;
       background-size: 30px 30px;
       background-position: left center;
-      color: $turquoise;
       background-color: $turquoise;
       animation-duration: 2s;
       animation-iteration-count: infinite;
@@ -194,7 +192,7 @@
     margin: 0 auto;
     margin-top: 20px;
     padding-left: 25px;
-    color: rgba($color: #1c1c1c, $alpha: 0.5);
+    color: #1c1c1c;
 
     &:hover,
     &:focus {
@@ -221,10 +219,9 @@
 
     &:hover,
     &:focus {
-      background: url("/build/img/icon-bicycle.png") no-repeat;
+      background: url("/img/icon-bicycle.png") no-repeat;
       background-size: 30px 30px;
       background-position: left center;
-      color: $turquoise;
       background-color: $turquoise;
       animation-duration: 2s;
       animation-iteration-count: infinite;
