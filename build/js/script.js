@@ -64,7 +64,7 @@ if (nameInput && phoneInput) {
 }
 
 var footerOnBottom = function () {
-if (window.innerHeight >= 4175 && window.innerWidth >= 1440) {
+  if (window.innerHeight >= 4175 && window.innerWidth >= 1440) {
     footer.classList.add('footer--bottom');
   }
   if (window.innerHeight <= 4175 && window.innerWidth >= 1440 && footer.classList.contains('footer--bottom')) {
@@ -91,7 +91,7 @@ if (window.innerHeight >= 4175 && window.innerWidth >= 1440) {
   if (window.innerHeight <= 3946 && window.innerWidth >= 320 && window.innerWidth <= 767 && footer.classList.contains('footer--bottom')) {
     footer.classList.remove('footer--bottom');
   }
-}
+};
 window.addEventListener('resize', function () {
   footerOnBottom();
 });
