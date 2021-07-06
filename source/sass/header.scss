@@ -308,7 +308,7 @@
   }
 
   .header__nav--menu-closed {
-    background: none;
+    display: none;
 
     &::before {
       content: "";
