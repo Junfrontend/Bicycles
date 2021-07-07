@@ -3,6 +3,7 @@
     display: flex;
     width: 565px;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 37px;
     margin-bottom: 100px;
@@ -27,8 +28,8 @@
 
   .contacts__email {
     position: relative;
-    left: 42px;
-    top: 3px;
+    margin-left: 42px;
+    margin-top: 3px;
 
     svg {
       position: absolute;
@@ -39,8 +40,8 @@
 
   .contacts__phone {
     position: relative;
-    right: 17px;
-    top: 3px;
+    margin-right: 17px;
+    margin-top: 3px;
 
     svg {
       position: absolute;

@@ -7,6 +7,7 @@ var phoneInput = document.getElementById('phone');
 var sendButton = document.querySelector('.form__button');
 var body = document.querySelector('body');
 var footer = document.querySelector('.footer');
+var navWhitePlugOpenMenu = document.querySelector('nav');
 
 if (nav) {
   nav.classList.add('header__nav--menu-closed');
@@ -20,6 +21,7 @@ if (toggle && nav) {
     nav.classList.toggle('header__nav--menu-closed');
     toggle.classList.toggle('header__toggle--opened');
     body.classList.toggle('overflow-hidden');
+    navWhitePlugOpenMenu.classList.toggle('header__nav--white-plug');
   });
 }
 

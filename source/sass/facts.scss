@@ -19,6 +19,7 @@
   .facts__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     counter-reset: myCounter;
     margin: 50px 145px 0 143px;
     padding: 0;

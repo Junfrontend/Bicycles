@@ -130,12 +130,19 @@
     }
 
     .types__kids {
-      margin: 0 auto;
       margin-top: 61px;
 
       img {
         height: 503px;
       }
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1439px) and(min-width: 1445px) {
+    .types__road,
+    .types__mount,
+    .types__kids {
+      margin-right: 10px;
     }
   }
 }
@@ -182,6 +189,7 @@
   .types__kids {
     display: flex;
     flex-direction: column;
+    margin-bottom: 48px;
 
     span {
       font-family: $font;
@@ -224,7 +232,6 @@
   .types__kids {
     position: relative;
     margin: 0 auto;
-    margin-top: 48px;
 
     img {
       width: 270px;
@@ -251,6 +258,18 @@
   @media (min-width: 988px) and (max-width: 1023px) {
     .types__kids {
       margin: 0;
+    }
+  }
+
+  @media (min-width: 788px) and (max-width: 1023px) {
+    .types__kids {
+      margin: 0;
+    }
+
+    .types__road,
+    .types__mount,
+    .types__kids {
+      margin-right: 10px;
     }
   }
 }
