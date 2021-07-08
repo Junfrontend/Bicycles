@@ -18,9 +18,9 @@
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 47px 145px 177px 74px;
+    grid-column-gap: 130.5px;
     width: 874px;
     z-index: 5;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -43,6 +43,7 @@
       font-family: $font;
       z-index: 5;
       letter-spacing: -0.5px;
+      margin-right: 5px;
     }
   }
 
@@ -77,6 +78,7 @@
     border: none;
     display: flex;
     justify-self: flex-end;
+    z-index: 1;
 
     &:hover,
     &:focus {
@@ -84,6 +86,7 @@
       animation-iteration-count: infinite;
       animation-name: rotate;
       cursor: pointer;
+      border-radius: 50%;
     }
   }
 
@@ -114,8 +117,11 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 200px;
+    height: 100vh;
     position: absolute;
+    top: 0;
+    background-color: #ffffff;
+    overflow-y: scroll;
 
     a {
       text-decoration: none;
@@ -128,11 +134,12 @@
       font-family: $font;
       background-color: #f6f6f6;
       color: rgba(72, 73, 77, 1);
-      height: 60px;
+      height: 90px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 0 20px;
+      margin-top: 55px;
 
       &::after {
         content: "";
@@ -188,9 +195,7 @@
   }
 
   .header__nav--menu-closed {
-    li {
-      display: none;
-    }
+    display: none;
   }
 }
 
@@ -272,6 +277,7 @@
     flex-direction: column;
     width: 100%;
     height: 100vh;
+    top: 0;
     position: absolute;
     background-color: #ffffff;
     overflow-y: scroll;
@@ -291,7 +297,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 0 20px;
-      margin-top: 45px;
+      margin-top: 55px;
 
       &::after {
         content: "";

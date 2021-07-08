@@ -50,12 +50,10 @@
   @media (min-width: 1500px) {
     .main-block {
       margin: 0 auto;
-      width: 1500px;
       margin-top: 260px;
 
       &::before {
-        max-width: 1500px;
-        left: calc((100% - 1500px) / 2);
+        left: 0;
       }
     }
   }

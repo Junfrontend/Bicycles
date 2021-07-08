@@ -114,6 +114,17 @@
     }
   }
 
+  @media (min-width: 1024px) and (max-width: 1255px) {
+    .types__road,
+    .types__mount,
+    .types__kids {
+      img {
+        width: 270px;
+        height: 400px;
+      }
+    }
+  }
+
   @media (min-width: 1024px) and (max-width: 1360px) {
     .types__wrapper {
       padding: 148px 100px 150px 100px;
@@ -121,24 +132,14 @@
 
     .types__mount {
       margin-top: 61px;
-      margin-right: 15px;
-      margin-left: 15px;
-
-      img {
-        height: 503px;
-      }
     }
 
     .types__kids {
       margin-top: 61px;
-
-      img {
-        height: 503px;
-      }
     }
   }
 
-  @media (min-width: 1024px) and (max-width: 1439px) and(min-width: 1445px) {
+  @media (min-width: 1024px) and (max-width: 1439px) and (min-width: 1445px) {
     .types__road,
     .types__mount,
     .types__kids {
