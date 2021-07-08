@@ -34,10 +34,12 @@ if (anchors) {
     anchors[i].addEventListener('click', function (e) {
       e.preventDefault();
       var id = e.target.getAttribute('href');
-      nav.classList.toggle('header__nav--menu-closed');
-      toggle.classList.toggle('header__toggle--opened');
-      body.classList.toggle('overflow-hidden');
-      navWhitePlugOpenMenu.classList.toggle('header__nav--white-plug');
+      if (window.outerWidth < 1024) {
+        nav.classList.toggle('header__nav--menu-closed');
+        toggle.classList.toggle('header__toggle--opened');
+        body.classList.toggle('overflow-hidden');
+        navWhitePlugOpenMenu.classList.toggle('header__nav--white-plug');
+      }
       document.querySelector(id).scrollIntoView({
         behavior: 'smooth',
         block: 'start'
