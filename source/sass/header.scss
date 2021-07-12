@@ -18,9 +18,9 @@
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 47px 145px 177px 74px;
-    grid-column-gap: 130.5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 874px;
     z-index: 5;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -43,9 +43,18 @@
       font-family: $font;
       z-index: 5;
       letter-spacing: -0.5px;
-      margin-right: 5px;
       overflow: visible;
+      margin-right: 5px;
     }
+  }
+
+  .header__nav--overflow {
+    li {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: auto;
+      }
+     }
   }
 
   .header__toggle {

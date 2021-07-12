@@ -16,6 +16,12 @@ if (nav) {
   var anchors = nav.querySelectorAll('a');
 }
 
+console.log(nav.offsetHeight);
+
+if (nav.offsetHeight > 36) {
+  nav.classList.add('header__nav--overflow')
+}
+
 if (toggle && nav) {
   toggle.classList.remove('header__toggle--no-js');
   toggle.addEventListener('click', function () {
