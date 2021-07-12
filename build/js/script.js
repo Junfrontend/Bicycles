@@ -109,4 +109,3 @@ window.addEventListener('resize', function () {
 if (types.children.length % 2 === 0) {
   types.children[types.children.length - 1].classList.add('last-element');
 }
-
