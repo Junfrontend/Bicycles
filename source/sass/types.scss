@@ -60,6 +60,8 @@
   .types__kids {
     display: flex;
     flex-direction: column;
+    margin-right: px;
+    margin-left: px;
 
     span {
       font-family: $font;
@@ -125,9 +127,9 @@
     }
   }
 
-  @media (min-width: 1024px) and (max-width: 1360px) {
+  @media (min-width: 1024px) and (max-width: 1400px) {
     .types__wrapper {
-      padding: 148px 100px 150px 100px;
+      padding: 148px 80px 150px 80px;
     }
 
     .types__mount {
@@ -154,7 +156,10 @@
   }
 
   .types__wrapper {
+    width: 768px;
+    box-sizing: border-box;
     display: flex;
+    margin: 0 auto;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 50px 89px 70px 89px;
@@ -232,7 +237,6 @@
 
   .types__kids {
     position: relative;
-    margin: 0 auto;
 
     img {
       width: 270px;
@@ -256,22 +260,8 @@
     }
   }
 
-  @media (min-width: 988px) and (max-width: 1023px) {
-    .types__kids {
-      margin: 0;
-    }
-  }
-
-  @media (min-width: 788px) and (max-width: 1023px) {
-    .types__kids {
-      margin: 0;
-    }
-
-    .types__road,
-    .types__mount,
-    .types__kids {
-      margin-right: 10px;
-    }
+  .last-element {
+    margin: 0 auto;
   }
 }
 
@@ -283,6 +273,7 @@
   .types__wrapper {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     padding: 50px 25px 54px 25px;
   }

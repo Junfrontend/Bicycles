@@ -8,6 +8,7 @@ var sendButton = document.querySelector('.form__button');
 var body = document.querySelector('body');
 var footer = document.querySelector('.footer');
 var navWhitePlugOpenMenu = document.querySelector('nav');
+var types = document.querySelector('.types__wrapper');
 
 if (nav) {
   nav.classList.add('header__nav--menu-closed');
@@ -103,3 +104,8 @@ var footerOnBottom = function () {
 window.addEventListener('resize', function () {
   footerOnBottom();
 });
+
+
+if (types.children.length % 2 === 0) {
+  types.children[types.children.length - 1].classList.add('last-element');
+}
