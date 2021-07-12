@@ -16,10 +16,8 @@ if (nav) {
   var anchors = nav.querySelectorAll('a');
 }
 
-console.log(nav.offsetHeight);
-
 if (nav.offsetHeight > 36) {
-  nav.classList.add('header__nav--overflow')
+  nav.classList.add('header__nav--overflow');
 }
 
 if (toggle && nav) {
